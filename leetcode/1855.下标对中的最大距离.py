@@ -74,6 +74,7 @@
 # @lc code=start
 class Solution:
     def maxDistance(self, nums1: List[int], nums2: List[int]) -> int:
+        # 双指针 (通过一个for 一个while来实现)
         m, n = len(nums1), len(nums2)
         i = 0
         max_distance = 0
