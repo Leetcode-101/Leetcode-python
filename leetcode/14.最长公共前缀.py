@@ -48,6 +48,7 @@
 # @lc code=start
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
+        # TODO 优化，可以通过两两匹配去找
         max_length = min([len(s) for s in strs])
         res = ""
         for i in range(max_length):
